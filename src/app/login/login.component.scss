@@ -1,4 +1,78 @@
 body{
     background-color: rgba(0, 128, 0, 0.822);
-    height: 95vh
+    height: 100vh;
 }
+.mainContainer{
+    display: flex;
+    gap:80px;
+    justify-content: center;    
+    
+}
+img{
+    width:80px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+h1{
+    margin-top: 60px;
+    margin-left: 20px;
+    font-size: 45px;
+    color: white;
+    
+}
+.Logo{
+display: flex;
+flex-direction: row;
+margin-top: 50px;
+}
+.textForLogo{
+    margin-top: 20px;
+    margin-left: 10px;
+    color: white;
+}
+.logosubText{
+    font-size: 10px;
+}
+.leftContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: white;
+    width: 30%; 
+    height:360px;
+    border-radius: 30px;
+    
+}
+p{
+    font-size: 40px;
+    margin-left: 130px;
+    font-weight: bold;
+}
+.textBoxAndButton{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 80%;
+    margin-left: 50px;
+}
+.checkboxAndLink{
+    display: flex;
+    flex-direction: row;
+    gap:100px;
+    margin-left: 45px;
+    margin-top: 30px;
+}
+.footer{
+    margin-left: 130px;
+    margin-top: 40px;
+    color: rgba(198, 196, 196, 0.79);
+}
+button{
+    background-color: green;
+    color: white;
+}
+a{
+    color: green;
+    text-decoration: none;
+}
+
