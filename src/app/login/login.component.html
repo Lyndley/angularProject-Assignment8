@@ -1,39 +1,46 @@
 <body>
-<div class="mainContainer">
-    <div class="rightContainer">
-        <div class="Logo">
-        <img src="../../assets/download.jpg">
+    <div class="mainContainer">
+        <div class="rightContainer">
+            <div class="Logo">
+                <img src="../../assets/download.jpg">
 
-        <div class="textForLogo">
-        <div class="logoText">EXCLUSIVE ADDONS</div>
-        <div class="logosubText">FOR ELEMENTOR</div>
-        </div>
+                <div class="textForLogo">
+                    <div class="logoText">EXCLUSIVE ADDONS</div>
+                    <div class="logosubText">FOR ELEMENTOR</div>
+                </div>
 
-        </div>
-        <h1>Create<br> Custom<br>Login Form</h1>
-        <div class="bottomPara">
-            exclusiveaddons.com
-        </div>
-    </div>
-
-    <div class="leftContainer">
-        <p>Log in</p>
-        <div class="textBoxAndButton">
-        <input type="text" placeholder="User Name/Email Address">
-        <input type="text" placeholder="password">
-        <button type="submit">Log in</button>
-        </div>
-
-        <div class="checkboxAndLink">
-            <div class="checkbox">
-        <input type="checkbox">Remember Me
             </div>
-        <a href="#">Lost Your Password?</a>
+            <h1>Create<br> Custom<br>Login Form</h1>
+            <div class="bottomPara">
+                exclusiveaddons.com
+            </div>
         </div>
-        <div class="registerLink">
-            Register for an account
-        </div>
-    </div>
 
-</div>
+        <div class="leftContainer">
+            <p>Log in</p>
+
+            <div class="textBoxAndButton">
+
+                <input type="text" [(ngModel)]="loginUser.email" placeholder="User Name/Email Address">
+
+
+
+                <input type="text" [(ngModel)]="loginUser.password" placeholder="password">
+
+
+                <button type="submit" (click)="login()">Log in</button>
+            </div>
+
+            <div class="checkboxAndLink">
+                <div class="checkbox">
+                    <input type="checkbox">Remember Me
+                </div>
+                <a href="#">Lost Your Password?</a>
+            </div>
+            <div class="registerLink">
+                Register for an account
+            </div>
+        </div>
+
+    </div>
 </body>

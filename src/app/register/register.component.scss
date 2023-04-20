@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(26, 82, 186);
+    height:100vh
+}
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    gap:200px;
+    
+}
+h1{
+    font-weight: bold;
+    color: white;
+}
+.textBox{
+    display: flex;
+    margin-left: 100px;
+    gap:30px;
+}
+.rightTextBox{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 300px;
+    margin-top: 50px;
+}
+.leftTextBox{
+display: flex;
+flex-direction: column;
+gap:20px;
+width: 300px;
+margin-top: 50px;
+
+}
+.loginBtn{
+    margin-top: 100px;
+}
+.rightContainer{
+    margin-top: 200px;
+}
+.leftContainer{
+    margin-top: 200px;
+    background-color: white;
+    height:400px;
+    width:850px;
+    border-radius: 6rem 0 0 6rem
+}
+.para{
+    color: white;
+}
+.registerButton{
+    margin-top: 10px; 
+    margin-left: 660px;
+   
+    
+}
+.head{
+    font-size: 25px;
+    margin-left: 300px;
+}
+button{
+    width: 70%;
+    border-radius: 2rem
+    
+    
+}
