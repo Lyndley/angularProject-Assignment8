@@ -1,10 +1,10 @@
 body{
-    background-color: rgba(0, 128, 0, 0.822);
+    background-color: rgba(20, 152, 95, 0.822);
     height: 100vh;
 }
 .mainContainer{
     display: flex;
-    gap:80px;
+    gap:100px;
     justify-content: center;    
     
 }
@@ -12,11 +12,12 @@ img{
     width:80px;
     margin-top: 20px;
     margin-left: 20px;
+    border-radius: 100%;
 }
 h1{
     margin-top: 60px;
     margin-left: 20px;
-    font-size: 45px;
+    font-size: 70px;
     color: white;
     
 }
@@ -26,7 +27,7 @@ flex-direction: row;
 margin-top: 50px;
 }
 .textForLogo{
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 10px;
     color: white;
 }
@@ -36,7 +37,7 @@ margin-top: 50px;
 .leftContainer{
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 150px;
     background-color: white;
     width: 30%; 
     height:360px;
@@ -62,17 +63,22 @@ p{
     margin-left: 45px;
     margin-top: 30px;
 }
-.footer{
+.registerLink{
     margin-left: 130px;
     margin-top: 40px;
     color: rgba(198, 196, 196, 0.79);
 }
 button{
-    background-color: green;
+    background-color: rgba(20, 152, 95, 0.822);
     color: white;
 }
 a{
-    color: green;
+    color: rgba(20, 152, 95, 0.822);
     text-decoration: none;
+}
+.bottomPara{
+    color: white;
+    margin-top: 200px;
+    margin-left: 20px;
 }
 
