@@ -21,13 +21,8 @@
 
             <div class="textBoxAndButton">
 
-                <input type="text" [(ngModel)]="loginUser.email" placeholder="User Name/Email Address">
-
-
-
-                <input type="text" [(ngModel)]="loginUser.password" placeholder="password">
-
-
+                <input type="text" name="email" [(ngModel)]="email" placeholder="User Name/Email Address">
+                <input type="text" name="password" [(ngModel)]="password" placeholder="password">
                 <button type="submit" (click)="login()">Log in</button>
             </div>
 

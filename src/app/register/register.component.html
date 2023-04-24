@@ -6,35 +6,40 @@
             <p>You are 30 seconds away<br>from earning your own<br>money!</p>
         </div>
         <div class="loginBtn">
-        <button type="submit">Login</button>
+        <button type="submit" (click)="directToLogin()" >Login</button>
         </div>
     </div>
     <div class="leftContainer">
         <div class="head">
             <p>Apply as a Employee</p>
         </div>
+        <form #userForm="ngForm">
         <div class="textBox">
             <div class="rightTextBox">
-            <input type="text" name="firstName" placeholder="First Name">
-            <input type="text" name="lastName" placeholder="Last Name">
-            <input type="text" name="password" placeholder="Password">
-            <input type="text" name="confirmPassword" placeholder="Confirm Password">
+            <input type="text" name="name"  placeholder="First Name" [(ngModel)]="name" id="name">
+            <input type="text" name="surname" placeholder="Last Name" [(ngModel)]="surname" id="surname">
+            <input type="text" name="password" placeholder="Password" [(ngModel)]="password" id="password">
+            <input type="text" name="confirmPassword" placeholder="Confirm Password" [(ngModel)]="confirmPassword" id="confirmPassword">
             <div class="radioButton">
-            <input type="radio" name="Male">Male
-            <input type="radio" name="Female">Female
+            <input type="radio" name="gender" [(ngModel)]="gender">Male
+            <input type="radio" name="gender" [(ngModel)]="gender">Female
             </div>
             </div>
             <div class="leftTextBox">
-            <input type="text" name="email" placeholder="Your Email">
-            <input type="text" name="cel" placeholder="Your Phone">
-            <input type="text" name="firstName">
-            <input type="text" name="firstName" placeholder="Enter Your Answer">
+            <input type="text" name="email" placeholder="Your Email" [(ngModel)]="email">
+            <input type="text" name="cell" placeholder="Your Phone" [(ngModel)]="cell">
+            <select name="question" [(ngModel)]="question">
+                <option selected>Please select your security question</option>
+                <option *ngFor="let question of questions">{{ question }}</option>
+            </select>
+            <input type="text" name="answer" placeholder="Enter Your Answer" [(ngModel)]="answer">
             </div>
             
         </div>
         <div class="registerButton">
-        <button type="submit">Register</button>
+        <button type="submit" (click)="register()">Register</button>
         </div>
+        </form>
     </div>
 </div>
 </body>
