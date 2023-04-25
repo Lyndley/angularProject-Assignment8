@@ -16,23 +16,23 @@
         <form #userForm="ngForm">
         <div class="textBox">
             <div class="rightTextBox">
-            <input type="text" name="name"  placeholder="First Name" [(ngModel)]="name" id="name">
-            <input type="text" name="surname" placeholder="Last Name" [(ngModel)]="surname" id="surname">
-            <input type="text" name="password" placeholder="Password" [(ngModel)]="password" id="password">
-            <input type="text" name="confirmPassword" placeholder="Confirm Password" [(ngModel)]="confirmPassword" id="confirmPassword">
+            <input type="text" name="name"  placeholder="First Name" [(ngModel)]="user.name" id="name">
+            <input type="text" name="surname" placeholder="Last Name" [(ngModel)]="user.surname" id="surname">
+            <input type="text" name="password" placeholder="Password" [(ngModel)]="user.password" id="password">
+            <input type="text" name="confirmPassword" placeholder="Confirm Password" [(ngModel)]="user.confirmPassword" id="confirmPassword">
             <div class="radioButton">
-            <input type="radio" name="gender" [(ngModel)]="gender">Male
-            <input type="radio" name="gender" [(ngModel)]="gender">Female
+            <input type="radio" name="gender" [(ngModel)]="user.gender">Male
+            <input type="radio" name="gender" [(ngModel)]="user.gender">Female
             </div>
             </div>
             <div class="leftTextBox">
-            <input type="text" name="email" placeholder="Your Email" [(ngModel)]="email">
-            <input type="text" name="cell" placeholder="Your Phone" [(ngModel)]="cell">
-            <select name="question" [(ngModel)]="question">
+            <input type="text" name="email" placeholder="Your Email" [(ngModel)]="user.email">
+            <input type="text" name="cell" placeholder="Your Phone" [(ngModel)]="user.cell">
+            <select name="question" [(ngModel)]="user.question">
                 <option selected>Please select your security question</option>
                 <option *ngFor="let question of questions">{{ question }}</option>
             </select>
-            <input type="text" name="answer" placeholder="Enter Your Answer" [(ngModel)]="answer">
+            <input type="text" name="answer" placeholder="Enter Your Answer" [(ngModel)]="user.answer">
             </div>
             
         </div>

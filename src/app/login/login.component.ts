@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-login',
@@ -11,9 +12,10 @@ export class LoginComponent implements OnInit {
   password: string = '';
   users: any[] = [];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private loginUser: UserService) {}
 
   ngOnInit(): void {
+    console.log("login user", this.loginUser.loginUser)
     let storedUsers = localStorage.getItem('registerUser');
     if (storedUsers) {
       this.users = JSON.parse(storedUsers);
@@ -26,7 +28,6 @@ export class LoginComponent implements OnInit {
       if (this.users[i].email === this.email && this.users[i].password === this.password) {
         userExists = true;
         alert('Login Successful');
-      
       }
     }
     if (!userExists) {
