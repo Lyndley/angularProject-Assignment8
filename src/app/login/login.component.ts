@@ -28,12 +28,14 @@ export class LoginComponent implements OnInit {
       if (this.users[i].email === this.email && this.users[i].password === this.password) {
         userExists = true;
         alert('Login Successful');
+        this.router.navigate(['./home']);
+        return
       }
-    }
-    if (!userExists) {
+    else{
       alert('User does not exist');
       this.router.navigate(['./register']);
     }
   }
-  
 }
+} 
+

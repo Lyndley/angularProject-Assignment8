@@ -1,0 +1,15 @@
+.navBar{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.rightItems{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    margin-right: 40px;
+}
+.leftItems{
+    margin-left: 40px;
+}

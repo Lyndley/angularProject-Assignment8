@@ -1,0 +1,16 @@
+<div class="mainContainer">
+    <div class="navBar">
+        <div class="leftItems">
+            <div class="icon">
+                <img src="../../assets/toolbar.png" height="80px" alt="img">Hi
+            </div>
+        </div>
+            <div class="rightItems">
+                <img src="../../assets/heart.png" height="80px" alt="img">
+                <img src="../../assets/share.png" height="80px" alt="img">
+            </div>
+    </div>
+    <div class="body">
+        <p *ngFor="let user of users">Name: {{user.name}} Surname: {{user.surname}} Email:{{user.email}}</p>
+    </div>
+</div>
