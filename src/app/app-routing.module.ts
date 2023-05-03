@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 
+
 const routes: Routes = [
 {
   path:"",redirectTo:"login",pathMatch:"full"
@@ -15,7 +16,7 @@ const routes: Routes = [
   path:"register",component:RegisterComponent
 },
 {
-  path:"home" ,component:HomeComponent
+  path:"home",component:HomeComponent
 }
 ];
 

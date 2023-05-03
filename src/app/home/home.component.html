@@ -1,16 +1,15 @@
-<div class="mainContainer">
-    <div class="navBar">
-        <div class="leftItems">
+<div class="wrapper">
+    <div class="nav">
+        <div class="leftItem">
+            <div class="icon"><img src="../../assets/toolbar.png" height="19px"><p>Hi</p></div>
+        </div>
+        <div class="rightItems">
             <div class="icon">
-                <img src="../../assets/toolbar.png" height="80px" alt="img">Hi
+                <img src="../../assets/heart.png" height="19px">
             </div>
         </div>
-            <div class="rightItems">
-                <img src="../../assets/heart.png" height="80px" alt="img">
-                <img src="../../assets/share.png" height="80px" alt="img">
-            </div>
-    </div>
-    <div class="body">
-        <p *ngFor="let user of users">Name: {{user.name}} Surname: {{user.surname}} Email:{{user.email}}</p>
+        <div class="body">
+            <p *ngFor="let user of users">Name:{{user.name}} Surname:{{user.surname}}</p>
+        </div>
     </div>
 </div>
